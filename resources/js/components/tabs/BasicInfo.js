@@ -22,7 +22,7 @@ export default function BasicInfo(props) {
                     <label className="form-control-label">Course Title
                         <span className="required">*</span>
                         <input type="text" className="form-control course_title" name="course_title"
-                            placeholder="Course Title" value={context.course.course_title}  onChange={(e)=>e.target.value}/>
+                            placeholder="Course Title" value={context.course.course_title}  onChange={context.handleInputField}/>
                     </label>
                 </div>
 
@@ -44,14 +44,14 @@ export default function BasicInfo(props) {
                 <div className="form-group col-md-4">
                     <label className="form-control-label">Price &nbsp;
                         <i className="fa fa-info-circle" data-toggle="tooltip" data-original-title="Leave blank if the course is free"></i>
-                        <input type="number" className="form-control" id="price" name="price" placeholder="Course Price" value={context.course.price} onChange={(e)=>e.target.value}/>
+                        <input type="number" className="form-control" id="price" name="price" placeholder="Course Price" value={context.course.price} onChange={context.handleInputField}/>
                     </label>
                 </div>
 
                 <div className="form-group col-md-4">
                     <label className="form-control-label">Strike Out Price &nbsp;
                     <i className="fa fa-info-circle" data-toggle="tooltip" data-original-title="Applied only for paid courses"></i>
-                        <input type="number" className="form-control" name="strike_out_price" placeholder="Strike Out Price" value={context.course.strike_out_price} onChange={(e)=>e.target.value} />
+                        <input type="number" className="form-control" name="strike_out_price" placeholder="Strike Out Price" value={context.course.strike_out_price} onChange={context.handleInputField} />
                     </label>
                 </div>
 
@@ -63,7 +63,7 @@ export default function BasicInfo(props) {
 
                 <div className="form-group col-md-12">
                     <label className="form-control-label">Sub Title
-                        <textarea name="course_subtitle" className="overview form-control" value={context.course.course_subtitle || ''} onChange={(e)=>e.target.value}></textarea>
+                        <textarea name="course_subtitle" className="overview form-control" value={context.course.course_subtitle || ''} onChange={context.handleInputField}></textarea>
                     </label>
                 </div>
 

@@ -57,7 +57,6 @@ var CourseContextProvider = /*#__PURE__*/function (_Component) {
     _classCallCheck(this, CourseContextProvider);
     _this = _super.call(this, props);
     _defineProperty(_assertThisInitialized(_this), "componentDidMount", /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var json, curriculum;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -71,514 +70,23 @@ var CourseContextProvider = /*#__PURE__*/function (_Component) {
             // }
             _this.loadCourseInfo();
             console.log(_this.fileSizeWithUnit("1024"));
-            json = _course_json__WEBPACK_IMPORTED_MODULE_2__.course.curriculumSorting;
-            curriculum = [{
-              "id": 1,
-              "course_id": 1,
-              "title": "Introduction",
-              "lecturesSorting": "[1,2,4,3,25]",
-              "created_at": "2023-03-25 09:08:36",
-              "updated_at": "2023-03-27 08:46:13",
-              "lectures": [{
-                "id": 1,
-                "section_id": 1,
-                "file_id": 1,
-                "title": "Installing a text editor",
-                "description": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text.<\/p>",
-                "type": "audio",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[1]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": [{
-                  "id": 1,
-                  "lecture_id": 1,
-                  "uploader_id": 1,
-                  "name": "sample-15568160485135",
-                  "title": "samplemp3",
-                  "path": "",
-                  "type": "mp3",
-                  "extension": "mp3",
-                  "size": "4113874",
-                  "duration": "00:02:49",
-                  "tag": "curriculum",
-                  "processed": 1,
-                  "metaData": "",
-                  "created_at": "0000-00-00 00:00:00",
-                  "updated_at": "0000-00-00 00:00:00"
-                }, {
-                  "id": 2,
-                  "lecture_id": 1,
-                  "uploader_id": 1,
-                  "name": "sample_15568166868011",
-                  "title": "sample.pdf",
-                  "path": "",
-                  "type": "pdf",
-                  "extension": "pdf",
-                  "size": "164061",
-                  "duration": "11",
-                  "tag": "curriculum",
-                  "processed": 1,
-                  "metaData": "",
-                  "created_at": "0000-00-00 00:00:00",
-                  "updated_at": "0000-00-00 00:00:00"
-                }, {
-                  "id": 3,
-                  "lecture_id": 1,
-                  "uploader_id": 1,
-                  "name": "sample_15568167745496",
-                  "title": "sample.pdf",
-                  "path": "",
-                  "type": "pdf",
-                  "extension": "pdf",
-                  "size": "164061",
-                  "duration": "11",
-                  "tag": "curriculum_resource",
-                  "processed": 1,
-                  "metaData": "",
-                  "created_at": "0000-00-00 00:00:00",
-                  "updated_at": "0000-00-00 00:00:00"
-                }, {
-                  "id": 4,
-                  "lecture_id": 1,
-                  "uploader_id": 1,
-                  "name": "http:\/\/www.google.com",
-                  "title": "Google Site",
-                  "path": "",
-                  "type": "link",
-                  "extension": "link",
-                  "size": "",
-                  "duration": null,
-                  "tag": "curriculum_resource_link",
-                  "processed": 1,
-                  "metaData": "",
-                  "created_at": "0000-00-00 00:00:00",
-                  "updated_at": "0000-00-00 00:00:00"
-                }, {
-                  "id": 5,
-                  "lecture_id": 1,
-                  "uploader_id": 1,
-                  "name": "http:\/\/www.facebook.com",
-                  "title": "Facebook Resource",
-                  "path": "",
-                  "type": "link",
-                  "extension": "link",
-                  "size": "",
-                  "duration": null,
-                  "tag": "curriculum_resource_link",
-                  "processed": 1,
-                  "metaData": "",
-                  "created_at": "0000-00-00 00:00:00",
-                  "updated_at": "0000-00-00 00:00:00"
-                }]
-              }, {
-                "id": 2,
-                "section_id": 1,
-                "file_id": 2,
-                "title": "Adding real content",
-                "description": "<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[2]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 3,
-                "section_id": 1,
-                "file_id": 3,
-                "title": "Creating our index page",
-                "description": "<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[3]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 4,
-                "section_id": 1,
-                "file_id": null,
-                "title": "Customizing the vendors",
-                "description": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p>",
-                "type": "text",
-                "content": "<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[4]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 25,
-                "section_id": 1,
-                "file_id": 6,
-                "title": "DHAKKA _ Sidhu Moose Wala ft Afsana Khan _ The Kidd _ Punjabi Songs 2020 _ Gold .mp4",
-                "description": null,
-                "type": "video",
-                "content": null,
-                "metaData": null,
-                "publish": 0,
-                "resourcesSorting": null,
-                "created_at": "2023-03-27 08:45:55",
-                "updated_at": "2023-03-27 08:45:55",
-                "resources": [{
-                  "id": 6,
-                  "lecture_id": 25,
-                  "uploader_id": 3,
-                  "name": "DHAKKA-_-Sidhu-Moose-Wala-ft-Afsana-Khan-_-The-Kidd-_-Punjabi-Songs-2020-_-Gold-.mp4",
-                  "title": "DHAKKA _ Sidhu Moose Wala ft Afsana Khan _ The Kidd _ Punjabi Songs 2020 _ Gold .mp4",
-                  "path": "app\/course\/1\/DHAKKA-_-Sidhu-Moose-Wala-ft-Afsana-Khan-_-The-Kidd-_-Punjabi-Songs-2020-_-Gold-.mp4",
-                  "type": "video",
-                  "extension": "mp4",
-                  "size": "40044060",
-                  "duration": "00:05:36",
-                  "tag": "lecture_main_content",
-                  "processed": 0,
-                  "metaData": "",
-                  "created_at": "2023-03-27 08:46:00",
-                  "updated_at": "2023-03-27 08:46:00"
-                }]
-              }]
-            }, {
-              "id": 2,
-              "course_id": 1,
-              "title": "Neque porro quisquam",
-              "lecturesSorting": "[]",
-              "created_at": "2023-03-25 09:08:36",
-              "updated_at": "2023-03-25 09:08:36",
-              "lectures": [{
-                "id": 5,
-                "section_id": 2,
-                "file_id": 1,
-                "title": "Installing a text editor",
-                "description": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text.<\/p>",
-                "type": "audio",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[1]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 6,
-                "section_id": 2,
-                "file_id": 2,
-                "title": "Adding real content",
-                "description": "<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[2]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 7,
-                "section_id": 2,
-                "file_id": 3,
-                "title": "Creating our index page",
-                "description": "<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[3]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 8,
-                "section_id": 2,
-                "file_id": null,
-                "title": "Customizing the vendors",
-                "description": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p>",
-                "type": "text",
-                "content": "<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[4]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }]
-            }, {
-              "id": 3,
-              "course_id": 1,
-              "title": "Dignissimos ducimus qui blanditiis praesentium",
-              "lecturesSorting": "[]",
-              "created_at": "2023-03-25 09:08:36",
-              "updated_at": "2023-03-25 09:08:36",
-              "lectures": [{
-                "id": 9,
-                "section_id": 3,
-                "file_id": 1,
-                "title": "Installing a text editor",
-                "description": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text.<\/p>",
-                "type": "audio",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[1]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 10,
-                "section_id": 3,
-                "file_id": 2,
-                "title": "Adding real content",
-                "description": "<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[2]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 11,
-                "section_id": 3,
-                "file_id": 3,
-                "title": "Creating our index page",
-                "description": "<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[3]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 12,
-                "section_id": 3,
-                "file_id": null,
-                "title": "Customizing the vendors",
-                "description": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p>",
-                "type": "text",
-                "content": "<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[4]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }]
-            }, {
-              "id": 4,
-              "course_id": 1,
-              "title": "Maxime placeat facere possimus",
-              "lecturesSorting": "[]",
-              "created_at": "2023-03-25 09:08:36",
-              "updated_at": "2023-03-25 09:08:36",
-              "lectures": [{
-                "id": 13,
-                "section_id": 4,
-                "file_id": 1,
-                "title": "Installing a text editor",
-                "description": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text.<\/p>",
-                "type": "audio",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[1]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 14,
-                "section_id": 4,
-                "file_id": 2,
-                "title": "Adding real content",
-                "description": "<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[2]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 15,
-                "section_id": 4,
-                "file_id": 3,
-                "title": "Creating our index page",
-                "description": "<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[3]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 16,
-                "section_id": 4,
-                "file_id": null,
-                "title": "Customizing the vendors",
-                "description": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p>",
-                "type": "text",
-                "content": "<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[4]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }]
-            }, {
-              "id": 5,
-              "course_id": 1,
-              "title": "Molestias excepturi sint occaecati cupiditate",
-              "lecturesSorting": "[]",
-              "created_at": "2023-03-25 09:08:36",
-              "updated_at": "2023-03-25 09:08:36",
-              "lectures": [{
-                "id": 17,
-                "section_id": 5,
-                "file_id": 1,
-                "title": "Installing a text editor",
-                "description": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text.<\/p>",
-                "type": "audio",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[1]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 18,
-                "section_id": 5,
-                "file_id": 2,
-                "title": "Adding real content",
-                "description": "<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[2]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 19,
-                "section_id": 5,
-                "file_id": 3,
-                "title": "Creating our index page",
-                "description": "<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[3]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 20,
-                "section_id": 5,
-                "file_id": null,
-                "title": "Customizing the vendors",
-                "description": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p>",
-                "type": "text",
-                "content": "<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[4]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }]
-            }, {
-              "id": 6,
-              "course_id": 1,
-              "title": "Reprehenderit qui in ea voluptate velit esse",
-              "lecturesSorting": "[]",
-              "created_at": "2023-03-25 09:08:36",
-              "updated_at": "2023-03-25 09:08:36",
-              "lectures": [{
-                "id": 21,
-                "section_id": 6,
-                "file_id": 1,
-                "title": "Installing a text editor",
-                "description": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text.<\/p>",
-                "type": "audio",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[1]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 22,
-                "section_id": 6,
-                "file_id": 2,
-                "title": "Adding real content",
-                "description": "<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[2]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 23,
-                "section_id": 6,
-                "file_id": 3,
-                "title": "Creating our index page",
-                "description": "<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "type": "document",
-                "content": "",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[3]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }, {
-                "id": 24,
-                "section_id": 6,
-                "file_id": null,
-                "title": "Customizing the vendors",
-                "description": "<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p>",
-                "type": "text",
-                "content": "<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content, making it look like readable English.<\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don`t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn`t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.<\/p>",
-                "metaData": null,
-                "publish": 1,
-                "resourcesSorting": "[4]",
-                "created_at": "2023-03-25 09:08:36",
-                "updated_at": "2023-03-25 09:08:36",
-                "resources": []
-              }]
-            }]; // this.sortCurriculum(curriculum,json)
+            // const json=courseData.course.curriculumSorting;
+            // 
+            // this.sortCurriculum(curriculum,json)
             console.log(_this.sortCurriculum(curriculum, json));
-          case 5:
+          case 3:
           case "end":
             return _context.stop();
         }
       }, _callee);
     })));
-    // handleInputField = (event) => {
-    // 	let course = this.state.course;
-    // 	course[event.target.name] = event.target.value;
-    // 	this.setState({...this.state, course})
-    // }
+    _defineProperty(_assertThisInitialized(_this), "handleInputField", function (event) {
+      var course = _this.state.course;
+      course[event.target.name] = event.target.value;
+      _this.setState(_objectSpread(_objectSpread({}, _this.state), {}, {
+        course: course
+      }));
+    });
     // courseSelection = (event, cid) => {
     // 	let course = this.state.course;
     // 	if((course[event.target.name] || []).includes(cid)){
@@ -754,6 +262,7 @@ var CourseContextProvider = /*#__PURE__*/function (_Component) {
               return this.sortCurriculum(_course_json__WEBPACK_IMPORTED_MODULE_2__ === null || _course_json__WEBPACK_IMPORTED_MODULE_2__ === void 0 ? void 0 : _course_json__WEBPACK_IMPORTED_MODULE_2__.curriculum, _course_json__WEBPACK_IMPORTED_MODULE_2__ === null || _course_json__WEBPACK_IMPORTED_MODULE_2__ === void 0 ? void 0 : _course_json__WEBPACK_IMPORTED_MODULE_2__.course.curriculumSorting);
             case 4:
               curriculum = _context3.sent;
+              console.log(curriculum);
               curriculum.forEach(function (section) {
                 section.lectures = _this2.sortCurriculum(section.lectures, section.lecturesSorting);
               });
@@ -769,7 +278,7 @@ var CourseContextProvider = /*#__PURE__*/function (_Component) {
                 })
               }));
               // console.log(res)
-            case 9:
+            case 10:
             case "end":
               return _context3.stop();
           }
@@ -834,15 +343,15 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var toastr = window.toastr;
 var supportedFiles = {
-  audio: ['mp3', 'wav', 'ogg', 'm4a', 'mpeg'],
-  video: ['3gp', 'ogg', 'webm', 'ogg', 'mp4', 'mpeg'],
-  document: ['pdf'],
-  application: ['pdf']
+  audio: ["mp3", "wav", "ogg", "m4a", "mpeg"],
+  video: ["3gp", "ogg", "webm", "ogg", "mp4", "mpeg"],
+  document: ["pdf"],
+  application: ["pdf"]
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   //optimized by removing unneccessary repetition
   fileSizeWithUnit: function fileSizeWithUnit(size) {
-    var units = ['bytes', 'KB', 'MB', 'GB', 'TB'];
+    var units = ["bytes", "KB", "MB", "GB", "TB"];
     var index = 0;
     while (size >= 1024 && index < units.length - 1) {
       size /= 1024;
@@ -851,48 +360,60 @@ var supportedFiles = {
     return "".concat(size.toFixed(2), " ").concat(units[index]);
   },
   sortCurriculum: function sortCurriculum(arrayOfObjs, sortingJSON) {
-    //Avoid unnecessary array copying: and Use a Map to avoid searching the array multiple times:
-    var sortedIDs = JSON.parse(sortingJSON || '[]');
-    var idToIndexMap = new Map(sortedIDs.map(function (id, index) {
-      return [id, index];
-    }));
-    arrayOfObjs.sort(function (_ref, _ref2) {
-      var id1 = _ref.id;
-      var id2 = _ref2.id;
-      var index1 = idToIndexMap.get(id1);
-      var index2 = idToIndexMap.get(id2);
-      return (index1 !== undefined ? index1 : Infinity) - (index2 !== undefined ? index2 : Infinity);
-    });
-    return arrayOfObjs;
+    // if (arraysEqual(getIdsArray(arrayOfObjs), sortedIDs)) {
+    //     // If the input array is already sorted in the desired order, return it.
+    //     return arrayOfObjs;
+    // } else {
+    var sortedIDs = [],
+      sortedArray = arrayOfObjs;
+    if (sortingJSON) {
+      try {
+        sortedIDs = JSON.parse(sortingJSON);
+      } catch (e) {
+        console.log(e);
+      }
+      sortedIDs = Array.isArray(sortedIDs) ? sortedIDs : [];
+      console.log('sorted ids' + sortedIDs);
+      sortedArray = arrayOfObjs.sort(function (a, b) {
+        return sortedIDs.indexOf(a.id) - sortedIDs.indexOf(b.id);
+      });
+    }
+    return sortedArray;
+    // }
   },
   sectionSortOnDrag: function sectionSortOnDrag(e) {
-    var _curriculum;
-    var curriculum = this.state.curriculum;
-    var section = curriculum.splice(e.source.index, 1);
-    var sectionsUnder = curriculum.splice(e.destination.index);
-
-    // console.log({curriculum, draggedSection, sectionsUnder})
-    curriculum = [].concat(_toConsumableArray(curriculum), _toConsumableArray(section), _toConsumableArray(sectionsUnder));
-    this.setState(_objectSpread(_objectSpread({}, this.state), {}, {
-      curriculum: curriculum
+    var _this = this;
+    var _this$state = this.state,
+      curriculum = _this$state.curriculum,
+      course = _this$state.course;
+    var source = e.source,
+      destination = e.destination;
+    var section = curriculum.splice(source.index, 1);
+    var sectionsUnder = curriculum.splice(destination.index);
+    var curriculumCopy = [].concat(_toConsumableArray(curriculum), _toConsumableArray(section), _toConsumableArray(sectionsUnder));
+    var sorted = JSON.stringify(curriculumCopy.map(function (s) {
+      return s.id;
     }));
-    // axios call to save the sorting
     var data = this.createFormData({
-      course_id: this.state.course.id,
-      sorted: JSON.stringify(((_curriculum = curriculum) === null || _curriculum === void 0 ? void 0 : _curriculum.map(function (s) {
-        return s.id;
-      })) || [])
+      course_id: course.id,
+      sorted: sorted
     });
-    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/curriculum/sections/reorder', data)["catch"](function (e) {
-      return console.log(e);
+    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/curriculum/sections/reorder", data).then(function () {
+      _this.setState(function (prevState) {
+        return {
+          curriculum: curriculumCopy
+        };
+      });
+    })["catch"](function (error) {
+      console.log(error);
     });
   },
   lectureSortOnDrag: function lectureSortOnDrag(e) {
     var _e$source$droppableId, _e$source$droppableId2, _e$destination$droppa, _e$destination$droppa2, _curriculum$srcSectio, _curriculum$destSecti, _curriculum$destSecti2, _curriculum$destSecti3, _curriculum$srcSectio2, _curriculum$destSecti4, _lecture$;
     console.log(e);
     var curriculum = this.state.curriculum;
-    var srcSectionID = Number((_e$source$droppableId = e.source.droppableId) === null || _e$source$droppableId === void 0 ? void 0 : (_e$source$droppableId2 = _e$source$droppableId.split('_')) === null || _e$source$droppableId2 === void 0 ? void 0 : _e$source$droppableId2[1]);
-    var destSectionID = Number((_e$destination$droppa = e.destination.droppableId) === null || _e$destination$droppa === void 0 ? void 0 : (_e$destination$droppa2 = _e$destination$droppa.split('_')) === null || _e$destination$droppa2 === void 0 ? void 0 : _e$destination$droppa2[1]);
+    var srcSectionID = Number((_e$source$droppableId = e.source.droppableId) === null || _e$source$droppableId === void 0 ? void 0 : (_e$source$droppableId2 = _e$source$droppableId.split("_")) === null || _e$source$droppableId2 === void 0 ? void 0 : _e$source$droppableId2[1]);
+    var destSectionID = Number((_e$destination$droppa = e.destination.droppableId) === null || _e$destination$droppa === void 0 ? void 0 : (_e$destination$droppa2 = _e$destination$droppa.split("_")) === null || _e$destination$droppa2 === void 0 ? void 0 : _e$destination$droppa2[1]);
     var srcSectionIndex = curriculum.findIndex(function (s) {
       return s.id == srcSectionID;
     });
@@ -914,25 +435,25 @@ var supportedFiles = {
       })) || []),
       lecture_id: (_lecture$ = lecture[0]) === null || _lecture$ === void 0 ? void 0 : _lecture$.id
     });
-    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/curriculum/lectures/reorder', data)["catch"](function (e) {
+    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/curriculum/lectures/reorder", data)["catch"](function (e) {
       return console.log(e);
     });
   },
   resourceSortOnDrag: function resourceSortOnDrag(e) {
-    var _ref3, _e$draggableId, _ref4, _e$source$droppableId3, _ref5, _e$destination$droppa3, _curriculum$srcSectio3, _curriculum$destSecti5, _curriculum$srcSectio4, _curriculum$srcSectio5, _curriculum$srcSectio6, _curriculum$srcSectio7, _curriculum$destSecti6, _curriculum$destSecti7, _curriculum$destSecti8, _curriculum$destSecti9, _curriculum$destSecti10, _curriculum$destSecti11, _curriculum$destSecti12, _curriculum$destSecti13, _curriculum$destSecti14, _curriculum$destSecti15, _curriculum$destSecti16, _curriculum$srcSectio8, _curriculum$destSecti17, _curriculum$destSecti18, _curriculum$destSecti19, _curriculum$srcSectio9, _curriculum$srcSectio10, _curriculum$srcSectio11, _resource$;
+    var _ref, _e$draggableId, _ref2, _e$source$droppableId3, _ref3, _e$destination$droppa3, _curriculum$srcSectio3, _curriculum$destSecti5, _curriculum$srcSectio4, _curriculum$srcSectio5, _curriculum$srcSectio6, _curriculum$srcSectio7, _curriculum$destSecti6, _curriculum$destSecti7, _curriculum$destSecti8, _curriculum$destSecti9, _curriculum$destSecti10, _curriculum$destSecti11, _curriculum$destSecti12, _curriculum$destSecti13, _curriculum$destSecti14, _curriculum$destSecti15, _curriculum$destSecti16, _curriculum$srcSectio8, _curriculum$destSecti17, _curriculum$destSecti18, _curriculum$destSecti19, _curriculum$srcSectio9, _curriculum$srcSectio10, _curriculum$srcSectio11, _resource$;
     console.log(e);
     var curriculum = this.state.curriculum;
-    var _map = (_ref3 = ((_e$draggableId = e.draggableId) === null || _e$draggableId === void 0 ? void 0 : _e$draggableId.split('_')) || []) === null || _ref3 === void 0 ? void 0 : _ref3.map(function (c) {
+    var _map = (_ref = ((_e$draggableId = e.draggableId) === null || _e$draggableId === void 0 ? void 0 : _e$draggableId.split("_")) || []) === null || _ref === void 0 ? void 0 : _ref.map(function (c) {
         return Number(c);
       }),
       _map2 = _slicedToArray(_map, 2),
       resourceID = _map2[1];
-    var _map3 = (_ref4 = ((_e$source$droppableId3 = e.source.droppableId) === null || _e$source$droppableId3 === void 0 ? void 0 : _e$source$droppableId3.split('_')) || []) === null || _ref4 === void 0 ? void 0 : _ref4.map(function (c) {
+    var _map3 = (_ref2 = ((_e$source$droppableId3 = e.source.droppableId) === null || _e$source$droppableId3 === void 0 ? void 0 : _e$source$droppableId3.split("_")) || []) === null || _ref2 === void 0 ? void 0 : _ref2.map(function (c) {
         return Number(c);
       }),
       _map4 = _slicedToArray(_map3, 2),
       srcLectureID = _map4[1];
-    var _map5 = (_ref5 = ((_e$destination$droppa3 = e.destination.droppableId) === null || _e$destination$droppa3 === void 0 ? void 0 : _e$destination$droppa3.split('_')) || []) === null || _ref5 === void 0 ? void 0 : _ref5.map(function (c) {
+    var _map5 = (_ref3 = ((_e$destination$droppa3 = e.destination.droppableId) === null || _e$destination$droppa3 === void 0 ? void 0 : _e$destination$droppa3.split("_")) || []) === null || _ref3 === void 0 ? void 0 : _ref3.map(function (c) {
         return Number(c);
       }),
       _map6 = _slicedToArray(_map5, 2),
@@ -972,7 +493,7 @@ var supportedFiles = {
       resource_id: (_resource$ = resource[0]) === null || _resource$ === void 0 ? void 0 : _resource$.id,
       sorted: destLecResourcesSorting
     });
-    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/curriculum/resources/reorder', data);
+    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/curriculum/resources/reorder", data);
     this.setState(_objectSpread(_objectSpread({}, this.state), {}, {
       curriculum: curriculum
     }));
@@ -994,7 +515,7 @@ var supportedFiles = {
       section_id: section.id,
       title: section.title
     });
-    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/curriculum/section/title/update', data)["catch"](function (e) {
+    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/curriculum/section/title/update", data)["catch"](function (e) {
       return console.log(e);
     });
   },
@@ -1019,28 +540,27 @@ var supportedFiles = {
       description: lecture.description,
       content: lecture.content
     });
-    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/curriculum/lecture/update', data)["catch"](function (e) {
+    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/curriculum/lecture/update", data)["catch"](function (e) {
       return console.log(e);
     });
   },
   /* 	saveLectureTitle(lecture, lectureIndex, sectionIndex){
-  		let curriculum = [...this.state.curriculum]
-  		curriculum[sectionIndex].lectures[lectureIndex] = lecture
-  		this.setState({...this.state, curriculum})
-  		// Axios call to update lecture title
-  	}, */
+  let curriculum = [...this.state.curriculum]
+  curriculum[sectionIndex].lectures[lectureIndex] = lecture
+  this.setState({...this.state, curriculum})
+  // Axios call to update lecture title
+  }, */
   isAllowedFileExtension: function isAllowedFileExtension(type, extention) {
-    return supportedFiles[(type || '').toLowerCase()] && supportedFiles[(type || '').toLowerCase()].includes((extention || '').toLowerCase());
+    return supportedFiles[(type || "").toLowerCase()] && supportedFiles[(type || "").toLowerCase()].includes((extention || "").toLowerCase());
   },
   uploadFilesInQue: function uploadFilesInQue() {
     var _window,
-      _this = this;
+      _this2 = this;
     var _window$$ = (_window = window) === null || _window === void 0 ? void 0 : _window.$,
       ajax = _window$$.ajax;
     if (!ajax) {
       return;
     }
-    ;
     var data = this.createFormData({
       course_id: this.state.course.id
     });
@@ -1050,27 +570,27 @@ var supportedFiles = {
       // Upload complete
     };
     var handleXHRProgress = function handleXHRProgress(event, key) {
-      var uploadFilesQue = _this.state.uploadFilesQue;
+      var uploadFilesQue = _this2.state.uploadFilesQue;
       uploadFilesQue[key].progress = event.loaded / event.total * 100;
-      _this.setState(_objectSpread(_objectSpread({}, _this.state), {}, {
+      _this2.setState(_objectSpread(_objectSpread({}, _this2.state), {}, {
         uploadFilesQue: uploadFilesQue
       }));
     };
     var handleXHRError = function handleXHRError(e, key) {
       var _uploadFilesQue$key;
-      console.log('error', e);
-      var uploadFilesQue = _this.state.uploadFilesQue;
+      console.log("error", e);
+      var uploadFilesQue = _this2.state.uploadFilesQue;
       uploadFilesQue[key] = _objectSpread(_objectSpread({}, uploadFilesQue[key]), {}, {
         error: true,
         uploading: false
       });
-      _this.setState(_objectSpread(_objectSpread({}, _this.state), {}, {
+      _this2.setState(_objectSpread(_objectSpread({}, _this2.state), {}, {
         uploadFilesQue: uploadFilesQue
       }));
       (_uploadFilesQue$key = uploadFilesQue[key]) === null || _uploadFilesQue$key === void 0 ? void 0 : _uploadFilesQue$key.onError(e, key);
     };
     var handleXHRAbort = function handleXHRAbort(event, key) {
-      console.log('Abort', event);
+      console.log("Abort", event);
       // let uploadFilesQue = this.state.uploadFilesQue
       // uploadFilesQue[key].error = true
       // uploadFilesQue[key].uploading= false
@@ -1089,7 +609,7 @@ var supportedFiles = {
         }
       });
       ajax({
-        type: 'POST',
+        type: "POST",
         url: uploadFilesQue[key].endpoint,
         //this.state.urls.createLecture,
         processData: false,
@@ -1124,19 +644,19 @@ var supportedFiles = {
     });
   },
   uploadFilesAsLectures: function uploadFilesAsLectures(files, section) {
-    var _this2 = this;
+    var _this3 = this;
     var filesFiltered = files.filter(function (file) {
       var _file$type, _file$type2;
-      return _this2.isAllowedFileExtension((_file$type = file.type) === null || _file$type === void 0 ? void 0 : _file$type.split('/')[0], (_file$type2 = file.type) === null || _file$type2 === void 0 ? void 0 : _file$type2.split('/')[1]);
+      return _this3.isAllowedFileExtension((_file$type = file.type) === null || _file$type === void 0 ? void 0 : _file$type.split("/")[0], (_file$type2 = file.type) === null || _file$type2 === void 0 ? void 0 : _file$type2.split("/")[1]);
     });
     if (filesFiltered.length != files.length) {
-      alert('Only files with following extentions are allowed.\n mp3, wav, ogg, 3gp, webm, mp4 and pdf');
+      alert("Only files with following extentions are allowed.\n mp3, wav, ogg, 3gp, webm, mp4 and pdf");
     }
     files = null;
     files = filesFiltered;
     filesFiltered = null;
     var callback = function callback(data, key) {
-      var state = _this2.state;
+      var state = _this3.state;
       var sectionIndex = state.curriculum.findIndex(function (s) {
         return s.id == section.id;
       });
@@ -1149,7 +669,7 @@ var supportedFiles = {
         state.uploadFilesQue[key].uploading = false;
         toastr.error(data.error || "An Error occured while uploading ".concat(state.uploadFilesQue[key].file.name));
       }
-      _this2.setState(_objectSpread({}, state));
+      _this3.setState(_objectSpread({}, state));
     };
     var onError = function onError(e, key) {
       console.log(e);
@@ -1157,7 +677,7 @@ var supportedFiles = {
         error: true,
         uploading: false
       });
-      _this2.setState(_objectSpread({}, state));
+      _this3.setState(_objectSpread({}, state));
       toastr.error(data.error || "An Error occured while uploading ".concat(state.uploadFilesQue[key].file.name));
     };
     var uploadFilesQue = this.state.uploadFilesQue;
@@ -1170,8 +690,8 @@ var supportedFiles = {
         section_id: section.id,
         callback: callback,
         onError: onError,
-        endpoint: _this2.state.urls.createLecture,
-        fields: ['file', 'title', 'description', 'content', 'section_id']
+        endpoint: _this3.state.urls.createLecture,
+        fields: ["file", "title", "description", "content", "section_id"]
       };
     });
     this.setState(_objectSpread(_objectSpread({}, this.state), {}, {
@@ -1181,7 +701,7 @@ var supportedFiles = {
     // this.setState({...this.state, uploadFilesQue})
   },
   createSection: function createSection(title) {
-    var _this3 = this;
+    var _this4 = this;
     var data = this.createFormData({
       course_id: this.state.course.id,
       section_title: title
@@ -1190,14 +710,14 @@ var supportedFiles = {
       var _data$data, _data$data2;
       console.log(data);
       if (data !== null && data !== void 0 && (_data$data = data.data) !== null && _data$data !== void 0 && _data$data.id && !(data !== null && data !== void 0 && (_data$data2 = data.data) !== null && _data$data2 !== void 0 && _data$data2.error)) {
-        var curriculum = _this3.state.curriculum || [];
+        var curriculum = _this4.state.curriculum || [];
         curriculum.push(data.data);
-        _this3.setState(_objectSpread(_objectSpread({}, _this3.state), {}, {
+        _this4.setState(_objectSpread(_objectSpread({}, _this4.state), {}, {
           curriculum: curriculum
         }));
       } else {
         var _data$data3;
-        toastr.error(((_data$data3 = data.data) === null || _data$data3 === void 0 ? void 0 : _data$data3.error) || 'An error occured while creating the section.');
+        toastr.error(((_data$data3 = data.data) === null || _data$data3 === void 0 ? void 0 : _data$data3.error) || "An error occured while creating the section.");
       }
     })["catch"](function (e) {
       return console.log(e);
@@ -1215,9 +735,9 @@ var supportedFiles = {
         size: 0
       },
       section_id: section.id,
-      title: lectureDetails.title || '',
-      description: lectureDetails.description || '',
-      content: lectureDetails.content || ''
+      title: lectureDetails.title || "",
+      description: lectureDetails.description || "",
+      content: lectureDetails.content || ""
     };
     this.setState(_objectSpread(_objectSpread({}, this.state), {}, {
       uploadFilesQue: uploadFilesQue
@@ -1241,19 +761,19 @@ var supportedFiles = {
     });
   },
   uploadResources: function uploadResources(files, lecture) {
-    var _this4 = this;
+    var _this5 = this;
     // Allow maximum fize upto 1GB
     var filesFiltered = files.filter(function (file) {
       return 2663235 / 1024 / 1024 / 1024 < 1;
     });
     if (filesFiltered.length != files.length) {
-      alert('Files greater than 1GB in size won\'t be uploaded');
+      alert("Files greater than 1GB in size won't be uploaded");
     }
     files = null;
     files = filesFiltered;
     filesFiltered = null;
     var callback = function callback(data, key) {
-      var state = _this4.state;
+      var state = _this5.state;
       var sectionIndex = state.curriculum.findIndex(function (s) {
         return s.lectures.find(function (l) {
           return l.id == lecture.id;
@@ -1272,16 +792,16 @@ var supportedFiles = {
         });
         toastr.error(data.error || "An Error occured while uploading ".concat(state.uploadFilesQue[key].file.name));
       }
-      _this4.setState(_objectSpread({}, state));
+      _this5.setState(_objectSpread({}, state));
     };
     var onError = function onError(e, key) {
       state.uploadFilesQue[key] = _objectSpread(_objectSpread({}, state.uploadFilesQue[key]), {}, {
         error: true,
         uploading: false
       });
-      _this4.setState(_objectSpread({}, state));
+      _this5.setState(_objectSpread({}, state));
       console.log({
-        type: 'error',
+        type: "error",
         e: e,
         key: key
       });
@@ -1296,8 +816,8 @@ var supportedFiles = {
         lecture_id: lecture.id,
         callback: callback,
         onError: onError,
-        endpoint: _this4.state.urls.addResource,
-        fields: ['file', 'lecture_id']
+        endpoint: _this5.state.urls.addResource,
+        fields: ["file", "lecture_id"]
       };
     });
     this.setState(_objectSpread(_objectSpread({}, this.state), {}, {
@@ -1310,16 +830,16 @@ var supportedFiles = {
     window.open(url);
   },
   deletedResourceFile: function deletedResourceFile(lecture_id, resource_id) {
-    var _this5 = this;
+    var _this6 = this;
     var data = this.createFormData({
       course_id: this.state.course.id,
       lecture_id: lecture_id,
       resource_id: resource_id
     });
-    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/curriculum/resource/delete', data).then(function (res) {
+    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/curriculum/resource/delete", data).then(function (res) {
       var _curriculum$sectionIn, _curriculum$sectionIn2, _curriculum$sectionIn3, _curriculum$sectionIn4;
       console.log(res);
-      var curriculum = _this5.state.curriculum;
+      var curriculum = _this6.state.curriculum;
       var lectureIndex = -1;
       var sectionIndex = curriculum.findIndex(function (s) {
         return s.lectures.find(function (l, i) {
@@ -1331,7 +851,7 @@ var supportedFiles = {
         return r.id == resource_id;
       });
       (_curriculum$sectionIn3 = curriculum[sectionIndex]) === null || _curriculum$sectionIn3 === void 0 ? void 0 : (_curriculum$sectionIn4 = _curriculum$sectionIn3.lectures) === null || _curriculum$sectionIn4 === void 0 ? void 0 : _curriculum$sectionIn4[lectureIndex].resources.splice(resourceIndex, 1);
-      _this5.setState(_objectSpread(_objectSpread({}, _this5.state), {}, {
+      _this6.setState(_objectSpread(_objectSpread({}, _this6.state), {}, {
         curriculum: curriculum
       }));
 
@@ -1342,7 +862,7 @@ var supportedFiles = {
   },
   deleteLecture: function deleteLecture(lectureIndex, sectionIndex) {
     var _section$lectures$spl;
-    if (!confirm('This will delete this lecture and all the resources associated.\nAre you sure to continue and delete?')) {
+    if (!confirm("This will delete this lecture and all the resources associated.\nAre you sure to continue and delete?")) {
       return;
     }
     var curriculum = this.state.curriculum;
@@ -1355,13 +875,13 @@ var supportedFiles = {
       course_id: this.state.course.id,
       lecture_id: lecture === null || lecture === void 0 ? void 0 : lecture.id
     });
-    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/curriculum/lecture/delete', data)["catch"](function (e) {
+    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/curriculum/lecture/delete", data)["catch"](function (e) {
       return console.log(e);
     });
   },
   deleteSection: function deleteSection(sectionIndex) {
     var _section$;
-    if (!confirm('This will delete this Section and all the lectures and resources associated.\nAre you sure to continue and delete?')) {
+    if (!confirm("This will delete this Section and all the lectures and resources associated.\nAre you sure to continue and delete?")) {
       return;
     }
     var curriculum = this.state.curriculum;
@@ -1373,7 +893,7 @@ var supportedFiles = {
       course_id: this.state.course.id,
       section_id: (_section$ = section[0]) === null || _section$ === void 0 ? void 0 : _section$.id
     });
-    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/curriculum/section/delete', data)["catch"](function (e) {
+    axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/curriculum/section/delete", data)["catch"](function (e) {
       return console.log(e);
     });
   },
@@ -1597,9 +1117,7 @@ function BasicInfo(props) {
             name: "course_title",
             placeholder: "Course Title",
             value: context.course.course_title,
-            onChange: function onChange(e) {
-              return e.target.value;
-            }
+            onChange: context.handleInputField
           })]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -1623,9 +1141,7 @@ function BasicInfo(props) {
             name: "price",
             placeholder: "Course Price",
             value: context.course.price,
-            onChange: function onChange(e) {
-              return e.target.value;
-            }
+            onChange: context.handleInputField
           })]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -1642,9 +1158,7 @@ function BasicInfo(props) {
             name: "strike_out_price",
             placeholder: "Strike Out Price",
             value: context.course.strike_out_price,
-            onChange: function onChange(e) {
-              return e.target.value;
-            }
+            onChange: context.handleInputField
           })]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
@@ -1666,9 +1180,7 @@ function BasicInfo(props) {
             name: "course_subtitle",
             className: "overview form-control",
             value: context.course.course_subtitle || '',
-            onChange: function onChange(e) {
-              return e.target.value;
-            }
+            onChange: context.handleInputField
           })]
         })
       })]
@@ -1691,14 +1203,140 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _CourseContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../CourseContext */ "./resources/js/CourseContext.js");
+/* harmony import */ var _SubmitButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SubmitButton */ "./resources/js/components/tabs/SubmitButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
-function Bundled() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-      children: "Bundled"
-    })
+
+// import { map } from 'jquery';
+
+
+
+function Bundled(props) {
+  var _context$availableToB2, _context$availableToB3;
+  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_CourseContext__WEBPACK_IMPORTED_MODULE_1__.CourseContext);
+  var selected_course = [];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    try {
+      selected_course = JSON.parse(context.course.bundled_courses || '[]');
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(selected_course.map(function (c) {
+      return c.course_id;
+    })),
+    _useState2 = _slicedToArray(_useState, 2),
+    selected = _useState2[0],
+    setSelected = _useState2[1];
+  function selectAll(e) {
+    var _context$availableToB;
+    e.preventDefault();
+    setSelected((_context$availableToB = context.availableToBundle) === null || _context$availableToB === void 0 ? void 0 : _context$availableToB.map(function (c) {
+      return c.id;
+    }));
+  }
+  function unSelectAll(e) {
+    e.preventDefault();
+    setSelected([]);
+  }
+  function handleCheckBox(course) {
+    if (!selected.includes(course.id)) {
+      setSelected([].concat(_toConsumableArray(selected), [course.id]));
+    } else {
+      setSelected(selected.filter(function (id) {
+        return id != course.id;
+      }));
+    }
+  }
+  var selectableCoursesHeader = ['Thumb', 'Title', 'Instructor', 'Instructor Email', 'Course Price', 'Bundled'];
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "form-group col-md-12 bundle_toggle",
+        children: ((_context$availableToB2 = context.availableToBundle) === null || _context$availableToB2 === void 0 ? void 0 : _context$availableToB2.length) > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          className: "form-group col-md-12",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            className: "row mb-5",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              className: "col-sm-6",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("h4", {
+                children: ["Bundle Courses", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+                  className: "fa fa-info-circle",
+                  "data-toggle": "tooltip",
+                  "data-original-title": "Selecting courses below will convert this course into a bundle."
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              className: "col-sm-6 text-right",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+                href: "#",
+                onClick: selectAll,
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("small", {
+                  children: "Select All"
+                })
+              }), " /", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("a", {
+                href: "#",
+                onClick: unSelectAll,
+                children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("small", {
+                  children: "Clear Selection"
+                })]
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            className: "bundle-courses-options selectable-courses-options",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              className: "selectable-courses-header",
+              children: selectableCoursesHeader.map(function (h) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  children: h
+                });
+              })
+            }), (_context$availableToB3 = context.availableToBundle) === null || _context$availableToB3 === void 0 ? void 0 : _context$availableToB3.map(function (course, i) {
+              var _course$_instructor, _course$_instructor2, _course$_instructor3, _context$course, _context$course$selec;
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("label", {
+                className: "bundle-course-option",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+                  src: course.thumb_image ? '/storage/' + course.thumb_image : '/backend/assets/images/blog_image.jpeg'
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
+                  children: [course.course_title, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
+                  children: [(_course$_instructor = course._instructor) === null || _course$_instructor === void 0 ? void 0 : _course$_instructor.first_name, " ", (_course$_instructor2 = course._instructor) === null || _course$_instructor2 === void 0 ? void 0 : _course$_instructor2.last_name]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  children: (_course$_instructor3 = course._instructor) === null || _course$_instructor3 === void 0 ? void 0 : _course$_instructor3.contact_email
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
+                  children: ["$", course.price ? course.price : '0.00']
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                  type: "checkbox",
+                  name: "selected_bundel_courses",
+                  checked: (_context$course = context.course) === null || _context$course === void 0 ? void 0 : (_context$course$selec = _context$course.selected_bundel_courses) === null || _context$course$selec === void 0 ? void 0 : _context$course$selec.includes(course.id),
+                  onChange: function onChange(e) {
+                    return context.courseSelection(e, course.id);
+                  }
+                })]
+              }, i);
+            })]
+          })]
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "col-md-12 text-center",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h4", {
+            children: "Currently, there aren't any courses available to bundle."
+          })
+        })
+      })
+    }), context.availableToBundle.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_SubmitButton__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
   });
 }
 
@@ -1717,14 +1355,253 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
+/* harmony import */ var _CourseContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../CourseContext */ "./resources/js/CourseContext.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
-function Contributors() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-      children: "Contributors"
-    })
+
+// import SubmitButton from './SubmitButton';
+
+
+
+function Contributors(props) {
+  var _context$contributors;
+  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_CourseContext__WEBPACK_IMPORTED_MODULE_1__.CourseContext);
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+    _useState2 = _slicedToArray(_useState, 2),
+    foundInstructors = _useState2[0],
+    setFoundInstructors = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState4 = _slicedToArray(_useState3, 2),
+    noInstructorsFound = _useState4[0],
+    setNotFound = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState6 = _slicedToArray(_useState5, 2),
+    searching = _useState6[0],
+    setSearching = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState8 = _slicedToArray(_useState7, 2),
+    isSearchFocused = _useState8[0],
+    setSearcFocused = _useState8[1];
+  function searchInstructor(e) {
+    var searchTerm = e.target.value;
+    if (searchTerm.replaceAll(' ', '').length < 3) {
+      return;
+    }
+    clearTimeout(window.instructorSearchTimeout);
+    window.instructorSearchTimeout = setTimeout( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var body;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            setSearching(true);
+            setNotFound(false);
+            body = new FormData();
+            body.append('search', searchTerm);
+            body.append('cid', context.course.id);
+            axios__WEBPACK_IMPORTED_MODULE_3__["default"].post(context.urls.searchContributor, body).then(function (res) {
+              var _res$data;
+              setFoundInstructors(res.data || []);
+              setSearching(false);
+              if (((_res$data = res.data) === null || _res$data === void 0 ? void 0 : _res$data.length) == 0) {
+                setNotFound(true);
+              }
+            })["catch"](function (e) {
+              setFoundInstructors([]);
+              setSearching(false);
+            });
+          case 6:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee);
+    })), 2000);
+  }
+  function inviteInstructor(_x2) {
+    return _inviteInstructor.apply(this, arguments);
+  }
+  function _inviteInstructor() {
+    _inviteInstructor = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(instructor) {
+      var data;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            data = new FormData();
+            data.append('cid', context.course.id);
+            data.append('instructor_id', instructor.id);
+
+            // $(e.target).prop('disabled', true).text('Sending invite...')
+
+            axios__WEBPACK_IMPORTED_MODULE_3__["default"].post(context.urls.addContributor, data).then(function (res) {
+              context.addContributor(instructor);
+              var searchResults = foundInstructors.filter(function (i) {
+                return i.id != instructor.id;
+              });
+              setFoundInstructors(searchResults);
+              if (searchResults.length == 0) {
+                // hide the search
+                setSearcFocused(false);
+              }
+              window.toastr.success('An invitation to contribute on this course is sent to instructor.');
+            })["catch"](function (e) {
+              // $(e.target).prop('disabled', false).text('Invite to contribute')
+              console.log(e);
+              window.toastr.error('Some error occured while adding contributor.');
+            });
+          case 4:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2);
+    }));
+    return _inviteInstructor.apply(this, arguments);
+  }
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "form-group col-md-12",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "contributors-search",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("label", {
+            className: "form-control-label",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
+              children: ["Invite Contributor \xA0", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("i", {
+                className: "fa fa-info-circle",
+                "data-toggle": "tooltip",
+                "data-original-title": "Allows other instructors to edit this course."
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+              type: "text",
+              placeholder: "Search Instructor",
+              name: "instructorSearch",
+              minLength: "3",
+              required: true,
+              onChange: searchInstructor,
+              onFocus: function onFocus(e) {
+                return setSearcFocused(true);
+              }
+            }), searching && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+              className: "contributors-search-loader",
+              children: "...."
+            }), isSearchFocused && foundInstructors.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "found-contributors",
+              children: foundInstructors === null || foundInstructors === void 0 ? void 0 : foundInstructors.map(function (instructor, i) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                  className: "instructor",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+                    src: "/backend/assets/images/user.png"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+                    children: [instructor.first_name, " ", instructor.last_name]
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+                    children: instructor.contact_email
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+                    className: "btn btn-success add-contributor",
+                    type: "button",
+                    "data-id": "0",
+                    onClick: function onClick(e) {
+                      return inviteInstructor(instructor);
+                    },
+                    children: "Invite to contribute"
+                  })]
+                }, i);
+              })
+            }), noInstructorsFound && isSearchFocused && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "no-instructor-found",
+              children: "No instructor meeting the search terms found. try searching with email."
+            })]
+          }), isSearchFocused && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "contributors-search-background",
+            onClick: function onClick(e) {
+              return setSearcFocused(false);
+            }
+          })]
+        })
+      })
+    }), context.contributors.length == 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "text-center no-contributors",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h4", {
+        children: "There aren't any instructors added as contributors in this course"
+      })
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "course-contributors",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "th",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          children: "#"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          children: "Thumb"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          children: "Name"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          children: "Email"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          children: "Contributor since"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          children: "Invitation status"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          children: "Options"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "tbody",
+        children: (_context$contributors = context.contributors) === null || _context$contributors === void 0 ? void 0 : _context$contributors.map(function (contributor, index) {
+          var _context$course$instr;
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "tr",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "td",
+              children: index + 1
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "td",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+                src: "/backend/assets/images/user.png"
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+              className: "td",
+              children: [contributor.instructor.first_name, " ", contributor.instructor.last_name]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "td",
+              children: contributor.instructor.contact_email
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "td",
+              children: contributor.added_at ? new Date(contributor.added_at * 1000).toLocaleString('en-US', {
+                day: "numeric",
+                year: "numeric",
+                month: "short"
+              }) : ''
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "td",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+                disabled: true,
+                className: "btn p-1 btn-".concat(contributor.pending_approval ? 'warning' : 'success'),
+                children: contributor.pending_approval ? 'Pending' : 'Accepted'
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "td",
+              children: parseInt((_context$course$instr = context.course.instructor) === null || _context$course$instr === void 0 ? void 0 : _context$course$instr.id) != parseInt(contributor.instructor_id) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+                type: "button",
+                className: "btn btn-danger",
+                onClick: function onClick(e) {
+                  return context.revokeContributionAccess(contributor);
+                },
+                children: "Revoke Access"
+              })
+            })]
+          }, index);
+        })
+      })]
+    })]
   });
 }
 
@@ -1769,14 +1646,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _CourseContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../CourseContext */ "./resources/js/CourseContext.js");
+/* harmony import */ var _SubmitButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SubmitButton */ "./resources/js/components/tabs/SubmitButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
-function Overview() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-      children: "Overview"
-    })
+
+
+
+
+function Overview(props) {
+  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_CourseContext__WEBPACK_IMPORTED_MODULE_1__.CourseContext);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    // window.$('#overviewEditor').summernote({
+    //     tabsize: 2,
+    //     height: 250,
+    //     minHeight: 250,
+    //     maxHeight: null,
+    //     toolbar: [
+    //         ['style', ['style']],
+    //         ['font', ['bold', 'underline', 'clear']],
+    //         ['fontname', ['fontname']],
+    //         ['para', ['ul', 'ol', 'paragraph']],
+    //         ['table', ['table']],
+    //         ['insert', ['link', 'picture', 'video']],
+    //         ['view', ['fullscreen']]
+    //     ],
+    // });
+    // window.$('#overviewEditor').on("summernote.change", context.handleInputField)
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "form-group col-md-12",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("label", {
+          className: "form-control-label",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h4", {
+            children: "Course Page Contents"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("textarea", {
+            id: "overviewEditor",
+            className: "form-control",
+            name: "overview",
+            defaultValue: context.course.overview
+          })]
+        })
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_SubmitButton__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
   });
 }
 
@@ -1795,13 +1711,79 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _CourseContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../CourseContext */ "./resources/js/CourseContext.js");
+/* harmony import */ var _SubmitButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SubmitButton */ "./resources/js/components/tabs/SubmitButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
-function Pricing() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-      children: "Pricing"
+
+
+
+
+function Pricing(props) {
+  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_CourseContext__WEBPACK_IMPORTED_MODULE_1__.CourseContext);
+  var tHead = ['ID', 'Plan Type', 'Plan Name', 'Price', 'Enrollment Cap', 'Action'];
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "form-group col-md-12",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "col-md-12 text-right",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("button", {
+            type: "button",
+            className: "btn btn-success price_model",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+              className: "icon wb-plus",
+              "aria-hidden": "true"
+            }), " Add Pricing Plan"]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("table", {
+          className: "table table-hover table-striped w-full",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("thead", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tr", {
+              children: tHead.map(function (h) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("th", {
+                  children: h
+                }, h);
+              })
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("tbody", {
+            children: context.pricings.map(function (pricing, index) {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("tr", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  children: index + 1
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  children: pricing.plan_type
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  children: pricing.plan_name
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  children: pricing.amount ? "".concat(pricing.amount, " ").concat(pricing.currency) : 'Free'
+                }), pricing.plan_type == "Free Plan" || pricing.plan_type == "One-Time Purchase" ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  children: "No"
+                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  children: "Yes"
+                }), pricing.enrollment_cap ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  children: "N/A"
+                }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  children: pricing.enrollment_cap
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("td", {
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+                    href: "{{ route('instructor.course_pricing.delete', $pricing->id) }}",
+                    className: "delete-record btn btn-xs btn-icon btn-inverse btn-round",
+                    "data-toggle": "tooltip",
+                    "data-original-title": "delete pricing",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+                      className: "icon wb-trash",
+                      "aria-hidden": "true"
+                    })
+                  })
+                })]
+              }, index);
+            })
+          })]
+        })]
+      })
     })
   });
 }
@@ -1821,14 +1803,105 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _CourseContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../CourseContext */ "./resources/js/CourseContext.js");
+/* harmony import */ var _SubmitButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SubmitButton */ "./resources/js/components/tabs/SubmitButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
-function Promo() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-      children: "This is promo"
-    })
+
+
+
+
+function Promo(props) {
+  var _context$video;
+  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_CourseContext__WEBPACK_IMPORTED_MODULE_1__.CourseContext);
+  var videoSrc = context.promo.video.src || ((_context$video = context.video) !== null && _context$video !== void 0 && _context$video.course_id ? context.urls.courseAssetsBase + context.video.bunny_url : "");
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "row",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "form-group col-md-6",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+          children: "Course Promo Image"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          className: "uploader",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+            type: "file",
+            accepts: "image/*",
+            className: "item-img file center-block",
+            name: "course_image",
+            id: "file-upload",
+            onChange: context.handlePromoImage,
+            accept: "image/*"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+            htmlFor: "file-upload",
+            id: "file-drag",
+            children: context.promo.image.src || context.course.course_image ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+              src: context.promo.image.src ? context.promo.image.src : context.course.course_image ? context.urls.courseAssetsBase + context.course.course_image : "#",
+              alt: "Preview"
+            }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                className: "promo-icon",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+                  className: "fa fa-upload",
+                  "aria-hidden": "true"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                  children: "Select an image or drag here"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  className: "btn btn-primary",
+                  children: "Select an image"
+                })]
+              })
+            })
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "form-group col-md-6",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+          children: "Course Promo Video"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "uploader",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("label", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+              type: "file",
+              accepts: "video/*",
+              className: "item-img file center-block",
+              name: "course_video",
+              onChange: context.handlePromoVideo,
+              accept: "video/mp4,video/x-m4v,video/*"
+            }), videoSrc ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("video", {
+              width: "320",
+              height: "240",
+              controls: true,
+              preload: "auto",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("source", {
+                src: videoSrc,
+                type: "video/mp4"
+              })
+            }, videoSrc) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                className: "promo-icon",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+                  className: "fa fa-upload",
+                  "aria-hidden": "true"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                  children: "Select a video or drag here"
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  className: "btn btn-primary",
+                  children: "Select a video"
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              id: "vresponse",
+              className: "hidden",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                id: "vmessages"
+              })
+            })]
+          })
+        })]
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_SubmitButton__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
   });
 }
 
@@ -1881,14 +1954,137 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _CourseContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../CourseContext */ "./resources/js/CourseContext.js");
+/* harmony import */ var _SubmitButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SubmitButton */ "./resources/js/components/tabs/SubmitButton.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
-function Upsells() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
-      children: "Upsells"
-    })
+
+
+
+
+function Upsells(props) {
+  var _context$availableToU2, _context$availableToU3, _context$availableToU4;
+  var context = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_CourseContext__WEBPACK_IMPORTED_MODULE_1__.CourseContext);
+  var selectedUpsells = [];
+  try {
+    selectedUpsells = JSON.parse(context.course.upsells_courses || '[]');
+  } catch (e) {
+    console.log(e);
+  }
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(selectedUpsells.map(function (u) {
+      return u.course_id;
+    })),
+    _useState2 = _slicedToArray(_useState, 2),
+    selected = _useState2[0],
+    setSelected = _useState2[1];
+  function selectAll(e) {
+    var _context$availableToU;
+    e.preventDefault();
+    setSelected((_context$availableToU = context.availableToUpsell) === null || _context$availableToU === void 0 ? void 0 : _context$availableToU.map(function (c) {
+      return c.id;
+    }));
+  }
+  function unSelectAll(e) {
+    e.preventDefault();
+    setSelected([]);
+  }
+  function handleCheckBox(course) {
+    if (!selected.includes(course.id)) {
+      setSelected([].concat(_toConsumableArray(selected), [course.id]));
+    } else {
+      setSelected(selected.filter(function (id) {
+        return id != course.id;
+      }));
+    }
+  }
+  var selectableCoursesHeader = ['Thumb', 'Title', 'Instructor', 'Instructor Email', 'Course Price', 'Bundled'];
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "row",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "form-group col-md-12",
+        children: ((_context$availableToU2 = context.availableToUpsell) === null || _context$availableToU2 === void 0 ? void 0 : _context$availableToU2.length) > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          className: "form-group col-md-12",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            className: "row",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              className: "col-sm-6",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("h4", {
+                children: ["Upsell Courses \xA0", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+                  className: "fa fa-info-circle",
+                  "data-toggle": "tooltip",
+                  "data-original-title": "Courses selected below will display on the course enrollment page for student as upsells."
+                })]
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              className: "col-sm-6 text-right",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+                href: "#",
+                onClick: selectAll,
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("small", {
+                  children: "Select All"
+                })
+              }), " /", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("a", {
+                href: "#",
+                onClick: unSelectAll,
+                children: [" ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("small", {
+                  children: "Clear Selection"
+                })]
+              })]
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            className: "upsells-courses-options selectable-courses-options",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              className: "selectable-courses-header",
+              children: selectableCoursesHeader.map(function (h) {
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  children: h
+                });
+              })
+            }), (_context$availableToU3 = context.availableToUpsell) === null || _context$availableToU3 === void 0 ? void 0 : _context$availableToU3.map(function (upsell, i) {
+              var _upsell$_instructor, _upsell$_instructor2, _upsell$_instructor3, _context$course, _context$course$selec;
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("label", {
+                className: "bundle-course-option",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+                  src: upsell.thumb_image ? '/storage/' + upsell.thumb_image : '/backend/assets/images/blog_image.jpeg'
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
+                  children: [upsell.course_title, " "]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
+                  children: [(_upsell$_instructor = upsell._instructor) === null || _upsell$_instructor === void 0 ? void 0 : _upsell$_instructor.first_name, " ", (_upsell$_instructor2 = upsell._instructor) === null || _upsell$_instructor2 === void 0 ? void 0 : _upsell$_instructor2.last_name]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  children: (_upsell$_instructor3 = upsell._instructor) === null || _upsell$_instructor3 === void 0 ? void 0 : _upsell$_instructor3.contact_email
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("span", {
+                  children: ["$", upsell.price ? upsell.price : '0.00']
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                  type: "checkbox",
+                  name: "selected_upsells",
+                  checked: (_context$course = context.course) === null || _context$course === void 0 ? void 0 : (_context$course$selec = _context$course.selected_upsells) === null || _context$course$selec === void 0 ? void 0 : _context$course$selec.includes(upsell.id),
+                  onChange: function onChange(e) {
+                    return context.courseSelection(e, upsell.id);
+                  }
+                })]
+              }, i);
+            })]
+          })]
+        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "col-md-12 text-center",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h4", {
+            children: "Currently, there are no courses to upsell."
+          })
+        })
+      })
+    }), ((_context$availableToU4 = context.availableToUpsell) === null || _context$availableToU4 === void 0 ? void 0 : _context$availableToU4.length) > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_SubmitButton__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
   });
 }
 
